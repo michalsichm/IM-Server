@@ -128,7 +128,7 @@ public class ActiveHandlers {
             return;
         }
         String groupName = args[1];
-        if (!groups.contains(groupName) && groupName == "public") {
+        if (!groups.contains(groupName) && !groupName.equals("public")) {
             sendMessage(handler, "This group doesn't exist!\n");
             return;
         }
